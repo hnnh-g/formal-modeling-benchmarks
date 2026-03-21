@@ -1,0 +1,902 @@
+[
+  {
+    "id": "uml_001",
+    "domain": "UML",
+    "question": "Name the three UML model type groups.",
+    "reference_answer": "Structure diagrams; Behavior diagrams; Interaction diagrams."
+  },
+  {
+    "id": "uml_002",
+    "domain": "UML",
+    "question": "What is an activity diagram used for?",
+    "reference_answer": "For modeling workflows and control flows with sequence, concurrency, and conditions."
+  },
+  {
+    "id": "uml_003",
+    "domain": "UML",
+    "question": "What does a use case diagram represent?",
+    "reference_answer": "The functional requirements from the perspective of users (actors and their use cases)."
+  },
+  {
+    "id": "uml_004",
+    "domain": "UML",
+    "question": "What is the function of a sequence diagram?",
+    "reference_answer": "Shows time-ordered interactions (messages) between objects over lifelines."
+  },
+  {
+    "id": "uml_005",
+    "domain": "UML",
+    "question": "How is generalization represented in UML?",
+    "reference_answer": "By a solid line with a hollow triangle at the end."
+  },
+  {
+    "id": "uml_006",
+    "domain": "UML",
+    "question": "How is a system boundary represented in a use case diagram?",
+    "reference_answer": "As a rectangle that contains the use cases."
+  },
+  {
+    "id": "uml_007",
+    "domain": "UML",
+    "question": "What information is shown in the top section of a class box?",
+    "reference_answer": "The class name."
+  },
+  {
+    "id": "uml_008",
+    "domain": "UML",
+    "question": "How is an object node represented in an activity diagram?",
+    "reference_answer": "As a rectangle, often with object name/type."
+  },
+  {
+    "id": "uml_009",
+    "domain": "UML",
+    "question": "What does a dashed arrow in a sequence diagram mean?",
+    "reference_answer": "A response (return message)."
+  },
+  {
+    "id": "uml_010",
+    "domain": "UML",
+    "question": "How are provided interfaces represented in a component diagram?",
+    "reference_answer": "As a circle (lollipop)."
+  },
+  {
+    "id": "uml_011",
+    "domain": "UML",
+    "question": "What does the abbreviation OMG stand for in the context of UML?",
+    "reference_answer": "Object Management Group."
+  },
+  {
+    "id": "uml_012",
+    "domain": "UML",
+    "question": "What is the purpose of a component diagram?",
+    "reference_answer": "It describes the architecture of a system as well as the interfaces and dependencies between individual system components."
+  },
+  {
+    "id": "uml_013",
+    "domain": "UML",
+    "question": "Which two views of software are distinguished in a class diagram?",
+    "reference_answer": "The conceptual view (relationships and dependencies) and the specification view (attributes and operations)."
+  },
+  {
+    "id": "uml_014",
+    "domain": "UML",
+    "question": "What does a port represent in a component diagram?",
+    "reference_answer": "A port is an endpoint for communication that contains interfaces and decouples the component from direct communication."
+  },
+  {
+    "id": "uml_015",
+    "domain": "UML",
+    "question": "What is the difference between a business use case and a system use case?",
+    "reference_answer": "A business use case is an abstract business process, while a system use case describes a concrete interaction with a system."
+  },
+  {
+    "id": "uml_016",
+    "domain": "UML",
+    "question": "What is the purpose of combined fragments in a sequence diagram?",
+    "reference_answer": "They are used to modularize interactions to represent alternative flows (alt), loops (loop), or optional parts (opt)."
+  },
+  {
+    "id": "uml_017",
+    "domain": "UML",
+    "question": "What is the difference between aggregation and composition in a class diagram?",
+    "reference_answer": "In aggregation, parts can exist independently of the whole, while in composition, parts depend on the whole for their existence."
+  },
+  {
+    "id": "uml_018",
+    "domain": "UML",
+    "question": "Name the four parts (subsets) of the UML 2 standard.",
+    "reference_answer": "Superstructure; Infrastructure; Object Constraint Language (OCL); Diagram Interchange (DI)."
+  },
+  {
+    "id": "uml_019",
+    "domain": "UML",
+    "question": "What does the UML Superstructure describe?",
+    "reference_answer": "Notation and semantics of diagrams and model elements."
+  },
+  {
+    "id": "uml_020",
+    "domain": "UML",
+    "question": "What is the purpose of the Object Constraint Language (OCL)?",
+    "reference_answer": "To specify formal constraints and rules for model elements."
+  },
+  {
+    "id": "uml_021",
+    "domain": "UML",
+    "question": "What is the goal of Diagram Interchange (DI)?",
+    "reference_answer": "Exchange/storage/layout information of diagrams between tools."
+  },
+  {
+    "id": "uml_022",
+    "domain": "UML",
+    "question": "Name typical use cases for deployment diagrams.",
+    "reference_answer": "Topology, hardware mapping, deployment of artifacts, performance/failover planning."
+  },
+  {
+    "id": "uml_023",
+    "domain": "UML",
+    "question": "What is a component container?",
+    "reference_answer": "Logical grouping of multiple components (container for components)."
+  },
+  {
+    "id": "uml_024",
+    "domain": "UML",
+    "question": "How is a required interface notated?",
+    "reference_answer": "As a semicircle (socket) at a port or via a dependency relationship to an interface class representation."
+  },
+  {
+    "id": "uml_025",
+    "domain": "UML",
+    "question": "What is a partition (swimlane) in activity diagrams?",
+    "reference_answer": "A region for responsibilities/organizational units in the flow."
+  },
+  {
+    "id": "uml_026",
+    "domain": "UML",
+    "question": "What does an interruptible region mean in an activity diagram?",
+    "reference_answer": "A region that can be interrupted by a signal or event."
+  },
+  {
+    "id": "uml_027",
+    "domain": "UML",
+    "question": "Name five types of events in state diagrams.",
+    "reference_answer": "CallEvent, SignalEvent, ChangeEvent, TimeEvent, AnyReceiveEvent."
+  },
+  {
+    "id": "uml_028",
+    "domain": "UML",
+    "question": "What is a terminator in state diagrams?",
+    "reference_answer": "A symbol that marks the end of the entire state machine/process."
+  },
+  {
+    "id": "uml_029",
+    "domain": "UML",
+    "question": "What is the difference between a protocol state machine and a behavioral state machine?",
+    "reference_answer": "Protocol: defines allowed order of operations; Behavioral: actual behavior/reaction to events."
+  },
+  {
+    "id": "uml_030",
+    "domain": "UML",
+    "question": "What are sequence diagrams used for in API design?",
+    "reference_answer": "Representation of call sequences, return values, error paths, and latency issues."
+  },
+  {
+    "id": "uml_031",
+    "domain": "UML",
+    "question": "What is an activation in a sequence diagram?",
+    "reference_answer": "The time span during which an object actively executes an operation."
+  },
+  {
+    "id": "uml_032",
+    "domain": "UML",
+    "question": "How is destruction of a lifeline participant shown in UML?",
+    "reference_answer": "With a cross at the end of the lifeline."
+  },
+  {
+    "id": "uml_033",
+    "domain": "UML",
+    "question": "What are typical interaction operators in combined fragments?",
+    "reference_answer": "alt, loop, opt, par"
+  },
+  {
+    "id": "uml_034",
+    "domain": "UML",
+    "question": "What is an object flow in an activity diagram?",
+    "reference_answer": "Flow of object instances between actions (data flow)."
+  },
+  {
+    "id": "uml_035",
+    "domain": "UML",
+    "question": "What are state invariants in sequence diagrams used for?",
+    "reference_answer": "To specify state conditions/guards that must hold during the interaction."
+  },
+  {
+    "id": "uml_036",
+    "domain": "UML",
+    "question": "What does the stereotype <<interface>> represent in UML?",
+    "reference_answer": "Marks an interface definition."
+  },
+  {
+    "id": "uml_037",
+    "domain": "UML",
+    "question": "How is visibility represented in class diagrams?",
+    "reference_answer": "+ for public, − for private, # for protected."
+  },
+  {
+    "id": "uml_038",
+    "domain": "UML",
+    "question": "What does an object diagram show compared to a class diagram?",
+    "reference_answer": "Concrete instances (objects) at a specific point in time instead of types."
+  },
+  {
+    "id": "uml_039",
+    "domain": "UML",
+    "question": "What is the purpose of a communication diagram?",
+    "reference_answer": "Shows participants and message relationships in a network-like form (focus: structure + sequence numbers)."
+  },
+  {
+    "id": "uml_040",
+    "domain": "UML",
+    "question": "What is an interaction overview diagram?",
+    "reference_answer": "Combination of activity and interaction diagram; shows interaction fragments as activities."
+  },
+  {
+    "id": "uml_041",
+    "domain": "UML",
+    "question": "What does the stereotype <<actor>> represent in use case diagrams?",
+    "reference_answer": "Marks roles/external actors interacting with the system."
+  },
+  {
+    "id": "uml_042",
+    "domain": "UML",
+    "question": "How is reflexivity represented in a class diagram?",
+    "reference_answer": "An association from and to the same class; possibly with role names."
+  },
+  {
+    "id": "uml_043",
+    "domain": "UML",
+    "question": "What does a frame represent in UML diagrams?",
+    "reference_answer": "A boundary/container for a diagram or fragment with a title bar (e.g. alt, loop)."
+  },
+  {
+    "id": "uml_044",
+    "domain": "UML",
+    "question": "What is the main purpose of UML?",
+    "reference_answer": "A graphical modeling language for visualizing, specifying, and documenting software systems."
+  },
+  {
+    "id": "uml_045",
+    "domain": "UML",
+    "question": "What is UML's goal regarding readability and processing?",
+    "reference_answer": "Readable for humans and processable for machines."
+  },
+  {
+    "id": "uml_046",
+    "domain": "UML",
+    "question": "What do structure diagrams describe?",
+    "reference_answer": "All static elements of a system and their relationships."
+  },
+  {
+    "id": "uml_047",
+    "domain": "UML",
+    "question": "What do behavior diagrams describe?",
+    "reference_answer": "The dynamic aspects of a system including reactions to events."
+  },
+  {
+    "id": "uml_048",
+    "domain": "UML",
+    "question": "What do interaction diagrams describe?",
+    "reference_answer": "Communication-based behavior diagrams showing message exchange between objects."
+  },
+  {
+    "id": "uml_049",
+    "domain": "UML",
+    "question": "Name one purpose of class diagrams as code support.",
+    "reference_answer": "Generate class skeletons or support automatic code generation."
+  },
+  {
+    "id": "uml_050",
+    "domain": "UML",
+    "question": "How is multiplicity defined in a class diagram?",
+    "reference_answer": "Describes how many instances of a class can be associated with another."
+  },
+  {
+    "id": "bpmn_001",
+    "domain": "BPMN",
+    "question": "What does the abbreviation BPMN stand for?",
+    "reference_answer": "Business Process Model and Notation"
+  },
+  {
+    "id": "bpmn_002",
+    "domain": "BPMN",
+    "question": "How is a process defined?",
+    "reference_answer": "A set of interrelated means and activities that transform inputs into results."
+  },
+  {
+    "id": "bpmn_003",
+    "domain": "BPMN",
+    "question": "What three properties does the sequence of activities in a process have?",
+    "reference_answer": "The sequence of activities is complete in content, temporal, and logical."
+  },
+  {
+    "id": "bpmn_004",
+    "domain": "BPMN",
+    "question": "What purpose does a process serve?",
+    "reference_answer": "It serves to process a business-relevant object."
+  },
+  {
+    "id": "bpmn_005",
+    "domain": "BPMN",
+    "question": "What is a business process?",
+    "reference_answer": "A collection of activities that together create added value for the process customer."
+  },
+  {
+    "id": "bpmn_006",
+    "domain": "BPMN",
+    "question": "Who is involved in a business process?",
+    "reference_answer": "Internal and external organizational units."
+  },
+  {
+    "id": "bpmn_007",
+    "domain": "BPMN",
+    "question": "What is the problem with business processes in organizations with division of labor?",
+    "reference_answer": "Processes are often fragmented, which leads to a high susceptibility to errors, lack of responsibility for the overall process, and waiting times due to many handovers."
+  },
+  {
+    "id": "bpmn_008",
+    "domain": "BPMN",
+    "question": "Why can business processes not simply be derived from the tasks of departments?",
+    "reference_answer": "They run across different business functional areas."
+  },
+  {
+    "id": "bpmn_009",
+    "domain": "BPMN",
+    "question": "How are business processes categorized?",
+    "reference_answer": "Business processes are divided into internal and inter-company processes."
+  },
+  {
+    "id": "bpmn_010",
+    "domain": "BPMN",
+    "question": "What is an internal business process?",
+    "reference_answer": "An internal business process takes place entirely within one company."
+  },
+  {
+    "id": "bpmn_011",
+    "domain": "BPMN",
+    "question": "What is an inter-company business process?",
+    "reference_answer": "An inter-company business process involves various external market participants such as customers and suppliers."
+  },
+  {
+    "id": "bpmn_012",
+    "domain": "BPMN",
+    "question": "What is the fundamental goal of business process modeling?",
+    "reference_answer": "To understand and control existing processes."
+  },
+  {
+    "id": "bpmn_013",
+    "domain": "BPMN",
+    "question": "Which key figures can be measured through process modeling?",
+    "reference_answer": "Relevant metrics such as time, costs, and used resources."
+  },
+  {
+    "id": "bpmn_014",
+    "domain": "BPMN",
+    "question": "What are additional purposes of business process modeling?",
+    "reference_answer": "Modeling serves to improve existing processes, design new processes, document all workflows, and automate processes."
+  },
+  {
+    "id": "bpmn_015",
+    "domain": "BPMN",
+    "question": "Why is process documentation important?",
+    "reference_answer": "Documentation is crucial for communication with all participants."
+  },
+  {
+    "id": "bpmn_016",
+    "domain": "BPMN",
+    "question": "What is a main goal of BPMN notation regarding understandability?",
+    "reference_answer": "The notation is designed to be easily understandable."
+  },
+  {
+    "id": "bpmn_017",
+    "domain": "BPMN",
+    "question": "What advantage does BPMN notation offer to business analysts?",
+    "reference_answer": "It is easily adaptable."
+  },
+  {
+    "id": "bpmn_018",
+    "domain": "BPMN",
+    "question": "How does BPMN help in representing processes?",
+    "reference_answer": "BPMN enables a clear representation, even for complex business processes."
+  },
+  {
+    "id": "bpmn_019",
+    "domain": "BPMN",
+    "question": "What does the transformability of BPMN models enable?",
+    "reference_answer": "The models can be transformed into languages for executing business processes (BPM Execution Languages)."
+  },
+  {
+    "id": "bpmn_020",
+    "domain": "BPMN",
+    "question": "Name the four diagram types of BPMN.",
+    "reference_answer": "Process diagram, collaboration diagram, conversation diagram, and choreography diagram."
+  },
+  {
+    "id": "bpmn_021",
+    "domain": "BPMN",
+    "question": "Which five main elements belong to the core elements of BPMN?",
+    "reference_answer": "Flow Objects, Swimlanes, Connecting Objects, Data Objects, and Artifacts."
+  },
+  {
+    "id": "bpmn_022",
+    "domain": "BPMN",
+    "question": "What does a process diagram represent?",
+    "reference_answer": "A process diagram represents a flow between tasks, events, and decisions."
+  },
+  {
+    "id": "bpmn_023",
+    "domain": "BPMN",
+    "question": "What is the purpose of a process diagram?",
+    "reference_answer": "It serves to map processes within a company."
+  },
+  {
+    "id": "bpmn_024",
+    "domain": "BPMN",
+    "question": "What does a collaboration diagram represent?",
+    "reference_answer": "It represents the message flow or communication between processes or entities."
+  },
+  {
+    "id": "bpmn_025",
+    "domain": "BPMN",
+    "question": "Who or what are examples of entities represented in a collaboration diagram?",
+    "reference_answer": "Customers or partners."
+  },
+  {
+    "id": "bpmn_026",
+    "domain": "BPMN",
+    "question": "What does a conversation diagram represent?",
+    "reference_answer": "It represents groups of messages and their relationships between processes and participants."
+  },
+  {
+    "id": "bpmn_027",
+    "domain": "BPMN",
+    "question": "What are the groups of messages in a conversation diagram called?",
+    "reference_answer": "They are called communications (conversations)."
+  },
+  {
+    "id": "bpmn_028",
+    "domain": "BPMN",
+    "question": "What does a choreography diagram represent?",
+    "reference_answer": "It represents the interaction of participants with activities and users or resources."
+  },
+  {
+    "id": "bpmn_029",
+    "domain": "BPMN",
+    "question": "What is the result of interaction in a choreography diagram?",
+    "reference_answer": "The interaction leads to messages."
+  },
+  {
+    "id": "bpmn_030",
+    "domain": "BPMN",
+    "question": "Into which three categories are flow objects divided?",
+    "reference_answer": "Flow Objects are divided into Activity, Event, and Gateway."
+  },
+  {
+    "id": "bpmn_031",
+    "domain": "BPMN",
+    "question": "What does an event represent in a business process?",
+    "reference_answer": "An event represents an occurrence."
+  },
+  {
+    "id": "bpmn_032",
+    "domain": "BPMN",
+    "question": "How is an event represented in BPMN?",
+    "reference_answer": "An event is represented as a circle."
+  },
+  {
+    "id": "bpmn_033",
+    "domain": "BPMN",
+    "question": "Which three types of events are there?",
+    "reference_answer": "There are start events, intermediate events, and end events."
+  },
+  {
+    "id": "bpmn_034",
+    "domain": "BPMN",
+    "question": "Which events can be interrupting or non-interrupting?",
+    "reference_answer": "Start and intermediate events can have this property."
+  },
+  {
+    "id": "bpmn_035",
+    "domain": "BPMN",
+    "question": "What are gateways used for in a process?",
+    "reference_answer": "Gateways are used to model branches in the control flow of processes."
+  },
+  {
+    "id": "bpmn_036",
+    "domain": "BPMN",
+    "question": "What are the two main functions of gateways?",
+    "reference_answer": "They are used for branching or merging flows."
+  },
+  {
+    "id": "bpmn_037",
+    "domain": "BPMN",
+    "question": "What is the purpose of swimlanes?",
+    "reference_answer": "Swimlanes are used to represent roles, responsibilities, or organizational structures."
+  },
+  {
+    "id": "bpmn_038",
+    "domain": "BPMN",
+    "question": "Which two types of swimlanes are there?",
+    "reference_answer": "There are pools and lanes."
+  },
+  {
+    "id": "bpmn_039",
+    "domain": "BPMN",
+    "question": "How many types of connecting objects are there in BPMN?",
+    "reference_answer": "Six types."
+  },
+  {
+    "id": "bpmn_040",
+    "domain": "BPMN",
+    "question": "What is the function of sequence flow?",
+    "reference_answer": "It defines the order of activities."
+  },
+  {
+    "id": "bpmn_041",
+    "domain": "BPMN",
+    "question": "What is a conditional flow used for?",
+    "reference_answer": "It defines when the flow is used."
+  },
+  {
+    "id": "bpmn_042",
+    "domain": "BPMN",
+    "question": "What does message flow represent?",
+    "reference_answer": "It represents the exchange of messages."
+  },
+  {
+    "id": "bpmn_043",
+    "domain": "BPMN",
+    "question": "What is an association used for?",
+    "reference_answer": "It is used to annotate artifacts to flow elements."
+  },
+  {
+    "id": "bpmn_044",
+    "domain": "BPMN",
+    "question": "How is data represented in BPMN?",
+    "reference_answer": "Data is represented by Data Stores and Data Objects."
+  },
+  {
+    "id": "bpmn_045",
+    "domain": "BPMN",
+    "question": "Which two types of artifacts exist in BPMN?",
+    "reference_answer": "There are groups and annotations."
+  },
+  {
+    "id": "bpmn_046",
+    "domain": "BPMN",
+    "question": "Does a group influence the control flow?",
+    "reference_answer": "No, a group has no influence on the control flow."
+  },
+  {
+    "id": "bpmn_047",
+    "domain": "BPMN",
+    "question": "What is a text annotation used for?",
+    "reference_answer": "It is used to provide the reader of the model with additional information about the elements."
+  },
+  {
+    "id": "bpmn_048",
+    "domain": "BPMN",
+    "question": "What is an activity in BPMN?",
+    "reference_answer": "An activity is a generic term for a task that is carried out within a process."
+  },
+  {
+    "id": "bpmn_049",
+    "domain": "BPMN",
+    "question": "What is a task in BPMN?",
+    "reference_answer": "A task represents a unit of work within a process"
+  },
+  {
+    "id": "bpmn_050",
+    "domain": "BPMN",
+    "question": "What is a user task?",
+    "reference_answer": "A user task is performed by a person with IT support."
+  },
+  {
+    "id": "petri_001",
+    "domain": "Petri Nets",
+    "question": "Explain how Petri nets can avoid deadlocks.",
+    "reference_answer": "Petri nets avoid deadlocks by analyzing states that prevent the blocking of resources."
+  },
+  {
+    "id": "petri_002",
+    "domain": "Petri Nets",
+    "question": "What are timed transitions in Petri nets?",
+    "reference_answer": "Timed transitions have a defined delay before they can be fired."
+  },
+  {
+    "id": "petri_003",
+    "domain": "Petri Nets",
+    "question": "How can Petri nets be used in the simulation of processes?",
+    "reference_answer": "Petri nets simulate processes by letting tokens flow through places and transitions to represent the process flow."
+  },
+  {
+    "id": "petri_004",
+    "domain": "Petri Nets",
+    "question": "Explain what a marking in a Petri net is.",
+    "reference_answer": "A marking defines the distribution of tokens over the places of a Petri net at a specific point in time."
+  },
+  {
+    "id": "petri_005",
+    "domain": "Petri Nets",
+    "question": "How is liveness analyzed in Petri nets?",
+    "reference_answer": "Liveness is analyzed by checking whether all transitions in a Petri net can potentially be fired."
+  },
+  {
+    "id": "petri_006",
+    "domain": "Petri Nets",
+    "question": "What is a loop in a Petri net?",
+    "reference_answer": "A loop arises when a sequence of transitions and places forms a cycle that can be traversed repeatedly."
+  },
+  {
+    "id": "petri_007",
+    "domain": "Petri Nets",
+    "question": "How are concurrent processes modeled with Petri nets?",
+    "reference_answer": "Concurrent processes are modeled through parallel places and transitions that act independently of each other."
+  },
+  {
+    "id": "petri_008",
+    "domain": "Petri Nets",
+    "question": "What is the significance of the reachability matrix in Petri nets?",
+    "reference_answer": "The reachability matrix shows which states of a Petri net can be reached through different transitions."
+  },
+  {
+    "id": "petri_009",
+    "domain": "Petri Nets",
+    "question": "How is a Petri net initialized?",
+    "reference_answer": "A Petri net is initialized by defining the initial marking and the connections between places and transitions."
+  },
+  {
+    "id": "petri_010",
+    "domain": "Petri Nets",
+    "question": "Explain what an extended Petri net is.",
+    "reference_answer": "An extended Petri net adds additional rules or structures to model more complex systems, such as priorities or time delays."
+  },
+  {
+    "id": "petri_011",
+    "domain": "Petri Nets",
+    "question": "How can Petri nets be used for parallel systems?",
+    "reference_answer": "Petri nets model parallel systems by representing the independent execution of multiple processes."
+  },
+  {
+    "id": "petri_012",
+    "domain": "Petri Nets",
+    "question": "What is the significance of boundedness in Petri nets?",
+    "reference_answer": "Boundedness means that the number of tokens in each place of a Petri net never grows infinitely."
+  },
+  {
+    "id": "petri_013",
+    "domain": "Petri Nets",
+    "question": "Explain what a deadlock analysis in Petri nets is.",
+    "reference_answer": "A deadlock analysis examines states in which no transition can be fired anymore."
+  },
+  {
+    "id": "petri_014",
+    "domain": "Petri Nets",
+    "question": "How can Petri nets be used for state models?",
+    "reference_answer": "State models use Petri nets to visualize the possible states of a system and their transitions."
+  },
+  {
+    "id": "petri_015",
+    "domain": "Petri Nets",
+    "question": "What is the purpose of inhibitor transitions in Petri nets?",
+    "reference_answer": "Inhibitor transitions prevent transitions from firing when certain places contain tokens."
+  },
+  {
+    "id": "petri_016",
+    "domain": "Petri Nets",
+    "question": "Explain what priorities in Petri nets are.",
+    "reference_answer": "Priorities determine which transitions are fired preferentially when several are enabled at the same time."
+  },
+  {
+    "id": "petri_017",
+    "domain": "Petri Nets",
+    "question": "How are time-dependent systems modeled in Petri nets?",
+    "reference_answer": "Time-dependent systems are modeled by assigning temporal parameters to transitions or tokens."
+  },
+  {
+    "id": "petri_018",
+    "domain": "Petri Nets",
+    "question": "What is a reachability graph in a Petri net?",
+    "reference_answer": "A reachability graph shows all possible states of a Petri net and the transitions between them."
+  },
+  {
+    "id": "petri_019",
+    "domain": "Petri Nets",
+    "question": "How does a Petri net support process optimization?",
+    "reference_answer": "A Petri net helps with process optimization by making bottlenecks and inefficient process flows visible."
+  },
+  {
+    "id": "petri_020",
+    "domain": "Petri Nets",
+    "question": "What is a hybrid timed Petri net?",
+    "reference_answer": "A hybrid timed Petri net combines discrete and temporal aspects to model complex processes with time delays."
+  },
+  {
+    "id": "petri_021",
+    "domain": "Petri Nets",
+    "question": "Name three typical application areas of Petri nets.",
+    "reference_answer": "Business processes, workflow management, operating system modeling."
+  },
+  {
+    "id": "petri_022",
+    "domain": "Petri Nets",
+    "question": "What does 'bipartite graph' mean in the context of Petri nets?",
+    "reference_answer": "There are two types of nodes (places and transitions), and edges connect only different node types."
+  },
+  {
+    "id": "petri_023",
+    "domain": "Petri Nets",
+    "question": "Briefly explain the notation of preset and postset of a transition.",
+    "reference_answer": "Preset •t = all places with an edge to t; Postset t• = all places to which t has edges."
+  },
+  {
+    "id": "petri_024",
+    "domain": "Petri Nets",
+    "question": "How is the enabling of a transition formally described in the lecture slides?",
+    "reference_answer": "All input places of the transition must have enough tokens (taking arc weights into account), and, if applicable, the capacity conditions of the output places must be satisfied."
+  },
+  {
+    "id": "petri_025",
+    "domain": "Petri Nets",
+    "question": "Which graphical notation is recommended in the lecture slides for tokens/marks when there are many tokens?",
+    "reference_answer": "For few tokens, dots; for many tokens, the number is written in the place."
+  },
+  {
+    "id": "petri_026",
+    "domain": "Petri Nets",
+    "question": "How is the dimension (arc weight) treated by default in the slides when no value is given?",
+    "reference_answer": "If no arc weight is specified, the weight is 1 by default."
+  },
+  {
+    "id": "petri_027",
+    "domain": "Petri Nets",
+    "question": "What is the capacity of a place and what applies if no capacity is specified?",
+    "reference_answer": "Capacity is the maximum number of tokens in a place; if unspecified, k = 1"
+  },
+  {
+    "id": "petri_028",
+    "domain": "Petri Nets",
+    "question": "How is a firing operation described with respect to preset and postset?",
+    "reference_answer": "When firing, tokens are removed from preset places and inserted into postset places (while observing weights and capacities)."
+  },
+  {
+    "id": "petri_029",
+    "domain": "Petri Nets",
+    "question": "What are the four basic situations in Petri net models mentioned in the slides?",
+    "reference_answer": "Causality, concurrency, conflict, and confusion."
+  },
+  {
+    "id": "petri_030",
+    "domain": "Petri Nets",
+    "question": "What is the purpose of a directed edge in a Petri net?",
+    "reference_answer": "A directed edge shows how places and transitions are connected and in which direction the tokens can flow."
+  },
+  {
+    "id": "petri_031",
+    "domain": "Petri Nets",
+    "question": "Explain the difference between a Free Choice Net and an Extended Free Choice Net.",
+    "reference_answer": "A Free Choice Net requires that the choice between transitions does not depend on other places, while an Extended Free Choice Net relaxes this condition to allow more complex models."
+  },
+  {
+    "id": "petri_032",
+    "domain": "Petri Nets",
+    "question": "What is the role of a token in a Petri net?",
+    "reference_answer": "A token represents the presence of an object or the validity of a condition."
+  },
+  {
+    "id": "petri_033",
+    "domain": "Petri Nets",
+    "question": "How is the liveness of a transition defined?",
+    "reference_answer": "A transition is 'live' if it can potentially fire again from every reachable state of the net."
+  },
+  {
+    "id": "petri_034",
+    "domain": "Petri Nets",
+    "question": "Name the three main types of Petri nets treated in the slides as subtypes.",
+    "reference_answer": "Marked Graphs, State Machines, and Free Choice Nets."
+  },
+  {
+    "id": "petri_035",
+    "domain": "Petri Nets",
+    "question": "What is the meaning of confusion in a Petri net?",
+    "reference_answer": "Confusion occurs when the firing order determines whether a conflict or concurrency arises."
+  },
+  {
+    "id": "petri_036",
+    "domain": "Petri Nets",
+    "question": "How are states modeled in a Petri net?",
+    "reference_answer": "States are modeled by places (circles). The current marking (number of tokens) in the places represents the system state."
+  },
+  {
+    "id": "petri_037",
+    "domain": "Petri Nets",
+    "question": "What is the primary property of a Marked Graph?",
+    "reference_answer": "In a Marked Graph, each place has exactly one incoming and one outgoing transition, which prevents conflicts."
+  },
+  {
+    "id": "petri_038",
+    "domain": "Petri Nets",
+    "question": "What is the primary property of a State Machine?",
+    "reference_answer": "In a State Machine, each transition has exactly one incoming and one outgoing place, which prevents concurrency."
+  },
+  {
+    "id": "petri_039",
+    "domain": "Petri Nets",
+    "question": "Briefly describe the concept of termination in Petri nets.",
+    "reference_answer": "A Petri net terminates if, starting from an initial state, it always ends in a deadlock."
+  },
+  {
+    "id": "petri_040",
+    "domain": "Petri Nets",
+    "question": "How can a reachability graph become infinite and what is the solution?",
+    "reference_answer": "A reachability graph can become infinite if the net can generate unboundedly many tokens. The coverability graph with ω symbols is used as a solution."
+  },
+  {
+    "id": "petri_041",
+    "domain": "Petri Nets",
+    "question": "What is an event in a Petri net?",
+    "reference_answer": "An event is an action or a process step represented by a transition (rectangle)."
+  },
+  {
+    "id": "petri_042",
+    "domain": "Petri Nets",
+    "question": "What does reversibility mean with respect to a Petri net?",
+    "reference_answer": "Reversibility means that the net can return to the initial state from every reachable state."
+  },
+  {
+    "id": "petri_043",
+    "domain": "Petri Nets",
+    "question": "How is the capacity function K defined in a place/transition net?",
+    "reference_answer": "The capacity function K:S→N+∪{∞} assigns each place s a maximum number of tokens."
+  },
+  {
+    "id": "petri_044",
+    "domain": "Petri Nets",
+    "question": "How is the weight function W defined in a place/transition net?",
+    "reference_answer": "The weight function W:F→N+∪{∞} assigns each edge in the flow relation a positive integer."
+  },
+  {
+    "id": "petri_045",
+    "domain": "Petri Nets",
+    "question": "How is the firing of a transition described in the context of arc weights and capacities?",
+    "reference_answer": "A transition can only fire if, for each input place, the number of tokens is greater than or equal to the arc weight and, for each output place, the capacity is not exceeded."
+  },
+  {
+    "id": "petri_046",
+    "domain": "Petri Nets",
+    "question": "What is the difference between a conflict and concurrency?",
+    "reference_answer": "A conflict is a situation in which multiple transitions compete for a shared resource, while in concurrency transitions can fire independently of each other."
+  },
+  {
+    "id": "petri_047",
+    "domain": "Petri Nets",
+    "question": "Which type of analysis can determine the liveness of a Petri net?",
+    "reference_answer": "Liveness can be determined through behavioral analysis (reachability graph) or structural analysis."
+  },
+  {
+    "id": "petri_048",
+    "domain": "Petri Nets",
+    "question": "Which property of a Petri net is referred to as boundedness?",
+    "reference_answer": "The boundedness of a net means that the number of tokens in every place always remains finite."
+  },
+  {
+    "id": "petri_049",
+    "domain": "Petri Nets",
+    "question": "How are the basic elements of a Petri net represented graphically?",
+    "reference_answer": "Places as circles, transitions as rectangles, and edges as directed lines."
+  },
+  {
+    "id": "petri_050",
+    "domain": "Petri Nets",
+    "question": "What does it mean if a Petri net is dead?",
+    "reference_answer": "A net is dead if none of its transitions can be enabled anymore."
+  }
+]

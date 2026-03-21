@@ -1,0 +1,182 @@
+[
+  {
+    "id": "uml_001",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram that models a test-and-retry loop. The process starts and repeatedly tests something. Inside the loop, if nothing went wrong the step is marked OK with a pale green color and breaks out of the loop. If something went wrong, an alert 'Error with long text' is shown. The repeat-while condition is labeled 'Something went wrong with long text?' with yes continuing the loop and no exiting. After the loop a merged step is shown in italic, followed by an 'Alert Success' step, then the process stops.",
+    "reference_answer": "solutions/activitydiagram.puml"
+  },
+  {
+    "id": "uml_002",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram that models a conditional diagram generation process. The process starts and checks whether Graphviz is installed. If yes, all diagrams are processed. If no, only sequence and activity diagrams are processed, with the words 'sequence' and 'activity' underlined. The process then stops.",
+    "reference_answer": "solutions/activity2.puml"
+  },
+  {
+    "id": "uml_003",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram showing a Student class with a Name attribute and a Course class, connected by a many-to-many association (0..* to 1..*). Add an association class Enrollment linked to the Student-Course relationship, containing two methods: drop() and cancel().",
+    "reference_answer": "solutions/class.puml"
+  },
+  {
+    "id": "uml_004",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram showing a single component aliased as C with four notes attached to it: a top note saying 'A top note', a right note saying 'A right note', a multi-line left note saying 'A left note can also be on several lines', and a multi-line bottom note saying 'A bottom note can also be on several lines'.",
+    "reference_answer": "solutions/component.puml"
+  },
+  {
+    "id": "uml_005",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram with the following structure. A package 'Some Group' contains a component 'First Component' exposed via an HTTP interface and a component 'Another Component'. A node 'Other Groups' contains a component 'Second Component' exposed via FTP, and 'First Component' connects to FTP. A cloud contains 'Example 1'. A database 'MySql' contains a folder 'This is my folder' with 'Folder 3', and a frame 'Foo' with 'Frame 4'. Add directed connections: Another Component to Example 1, Example 1 to Folder 3, and Folder 3 to Frame 4.",
+    "reference_answer": "solutions/componentDiagram.puml"
+  },
+  {
+    "id": "uml_006",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram showing four city objects: London, Washington, Berlin, and NewYork. Add a map called CapitalCity with three entries: UK mapping to London, USA mapping to Washington, and Germany mapping to Berlin, using arrows of increasing length for each entry. Add a directed connection from the NewYork object to the USA entry of the CapitalCity map.",
+    "reference_answer": "solutions/object.puml"
+  },
+  {
+    "id": "uml_007",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram for an authentication exchange between Alice and Bob with three alternative flows. In the successful case Bob accepts the authentication. In a failure case Bob sends an Authentication Failure, after which Alice logs the attack start, performs a DNS attack on Bob 1000 times in a loop, then logs the attack end — all grouped under a custom label. In a third case Bob asks Alice to repeat.",
+    "reference_answer": "solutions/sequence.puml"
+  },
+  {
+    "id": "uml_008",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram modeling a work delegation chain. A User sends DoWork to participant A, activating it. A sends a createRequest stereotype message to B, activating B. B sends DoWork to C, activating C. C returns WorkDone to B and is then destroyed. B returns RequestCreated to A and deactivates. A returns Done to the User and deactivates.",
+    "reference_answer": "solutions/sequence2.puml"
+  },
+  {
+    "id": "uml_009",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram that models an ID-based request routing process. From an Idle state, a Req(Id) state is entered, marked as an SDL receive. A choice pseudostate then routes to either a Minor(Id) state if the Id is less than or equal to 10, or a Major(Id) state if the Id is greater than 10.",
+    "reference_answer": "solutions/state.puml"
+  },
+  {
+    "id": "uml_010",
+    "domain": "UML",
+    "question": "Create a PlantUML diagram with a left-to-right layout showing an actor 'Food Critic' and a rectangle boundary named 'Restaurant' containing three use cases: 'Eat Food', 'Pay for Food', and 'Drink'. The Food Critic has associations to all three use cases.",
+    "reference_answer": "solutions/usecase.puml"
+  },
+  {
+    "id": "bpmn_001",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN diagram for a birthday invitation process. A person sends birthday invitations and then waits. After 4 weeks a timer event fires. The process then checks whether acceptances or rejections were received. If friends accepted, the person has a happy reaction; if rejected, they have a sad reaction and ask friends again. Model all required events, tasks, gateways, and sequence flows as shown in the diagram.",
+    "reference_answer": "solutions/birthdayInvite.bpmn"
+  },
+  {
+    "id": "bpmn_002",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN collaboration diagram for a student thesis process. The diagram involves two pools: a Student and an Employee. The student sends a thesis topic, receives change suggestions, incorporates them, and sends the exposé. The employee receives the topic, suggests changes, and receives the exposé. Model both pools with their lanes, tasks, message flows between the pools, and all sequence flows as shown in the diagram.",
+    "reference_answer": "solutions/collarboration_studentThesis.bpmn"
+  },
+  {
+    "id": "bpmn_003",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN collaboration diagram for a synchronous credit scoring process. The diagram has three pools: a credit scoring frontend (bank), a credit scoring backend (bank), and a scoring service. The frontend requests a credit score and waits. The backend receives the request, reports a delay if needed, and delegates to the scoring service. The scoring service computes a level-1 score and optionally a level-2 score, then returns the result. Model all pools, tasks, gateways (including the 'score received?' and 'score available?' decisions), message flows, and sequence flows as shown.",
+    "reference_answer": "solutions/credit-scoring-synchronous.bpmn"
+  },
+  {
+    "id": "bpmn_004",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN collaboration diagram for a dispatch of goods process at a computer hardware shop. The diagram has one pool with three lanes: Logistics, Secretary, and Warehouse. The Secretary decides the shipment method and, if special handling is required, gets 3 offers from logistics companies and selects one. The Secretary always writes a package label and, if insurance is necessary, insures the parcel. The Warehouse packages the goods and prepares for pickup. The Logistics lane ships the goods. Model all lanes, tasks, gateways, and sequence flows leading to the 'Shipment prepared' end event as shown.",
+    "reference_answer": "solutions/Dispatch-of-goods.bpmn"
+  },
+  {
+    "id": "bpmn_005",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN diagram for a lecture attendance process. The process starts when a lecture begins. The student turns on their laptop and then enters a loop of interacting with Facebook until the lecture finishes (modeled as a boundary event or interrupting event). When the lecture ends, the student turns off the laptop. Model all required events, tasks, and sequence flows as shown in the diagram.",
+    "reference_answer": "solutions/lecture_example.bpmn"
+  },
+  {
+    "id": "bpmn_006",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN diagram for an order process. The process starts with an incoming order. Inventory is checked; if the item is available, the order is prepared. If items are not available, the order is cancelled. Model all required start events, tasks, gateways, and end events with appropriate sequence flows and condition labels as shown in the diagram.",
+    "reference_answer": "solutions/orderProcess.bpmn"
+  },
+  {
+    "id": "bpmn_007",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN collaboration diagram for a pizza ordering process. The diagram has two pools: Pizza Customer and Pizza Vendor. The vendor pool has three lanes: clerk, pizza chef, and delivery boy. The customer selects and orders a pizza, waits up to 60 minutes, and if not delivered, asks for the pizza. Once received, the customer pays and eats the pizza. The vendor receives the order, bakes it, delivers it, and receives payment. If the customer complains, the clerk calms them. Model all pools, lanes, tasks, events, message flows (pizza order, receipt, money, pizza), and sequence flows as shown.",
+    "reference_answer": "solutions/pizza-collaboration.bpmn"
+  },
+  {
+    "id": "bpmn_008",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN diagram for a QR code scanning process. The customer notices a QR code and scans it. A gateway checks whether the scan was successful. If yes, the product information is opened in a mobile app and the customer is informed. If no, the process ends without success. Model all required events, tasks, gateways, and sequence flows with appropriate condition labels as shown in the diagram.",
+    "reference_answer": "solutions/qr-code.bpmn"
+  },
+  {
+    "id": "bpmn_009",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN diagram for a recourse clerk process. The process starts when a probable recourse is detected. The clerk checks the case and decides if recourse is possible. If yes, a payment request is sent; if no, the case is closed. After sending the request, if a reminder is due, a reminder is sent. If a disagreement letter is received, the reasoning is checked: if OK, the case is closed; if not, it is handed over to a collection agency. When money is received, a booking is made and the case is closed. Model all tasks, events, gateways, and sequence flows with correct conditions as shown.",
+    "reference_answer": "solutions/recourse.bpmn"
+  },
+  {
+    "id": "bpmn_010",
+    "domain": "BPMN",
+    "question": "Create a syntactically correct and semantically meaningful BPMN collaboration diagram for a self-service restaurant process. The diagram has three pools/lanes: Guest (food consumption), Employee (order processing), and Chef (meal preparation). The guest enters, chooses a dish, places an order, pays, takes a buzzer, waits for the meal to be ready, collects the meal, eats it, and leaves. The employee receives the order, enters it, collects payment, sets up a buzzer, and informs the chef. The chef prepares the meal, places it in the hatch, and informs the employee. After 5 minutes, if the guest has not appeared, the employee calls the guest. Model all lanes, tasks, events (including the timer), message/sequence flows as shown.",
+    "reference_answer": "solutions/self-service-restaurant.bpmn"
+  },
+  {
+    "id": "pnml_001",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful Petri net in PNML format for a library process. A customer wants to loan or return a book (start place with 1 token), enters the library via a transition, arrives at the place 'Customer at counter', and can then either loan a book or return a book. Model all required places, transitions, and directed arcs as shown in the diagram.",
+    "reference_answer": "solutions/library_example.pnml"
+  },
+  {
+    "id": "pnml_002",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful Petri net in PNML format for a gas station process. A customer arrives (start place with 1 token), fuels their car, pays, leaves the store, and drives away. After driving away, the customer token returns to enable a new customer to arrive. Model all required places, transitions, and directed arcs as shown in the diagram.",
+    "reference_answer": "solutions/gasStation_example.pnml"
+  },
+  {
+    "id": "pnml_003",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful Petri net in PNML format for a beauty salon process. A customer arrives (start place with 1 token), enters via an AND-split transition that triggers both a hair cut path and a manicure path in parallel. Both services must complete before an AND-join transition fires, after which the customer leaves. Model all required places, transitions, and directed arcs as shown in the diagram.",
+    "reference_answer": "solutions/salon_example.pnml"
+  },
+  {
+    "id": "pnml_004",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful Petri net in PNML format for a cyclic seasons process. The net models the four seasons — Spring, Summer, Autumn, and Winter — as places, cycling through them via transitions: Begin of Summer, Begin of Autumn, Begin of Winter, and Begin of Spring. The net also includes two auxiliary places 'not autumn' and 'winter or spring' that act as guards. Model all required places, transitions, and directed arcs as shown in the diagram.",
+    "reference_answer": "solutions/seasons_example.pnml"
+  },
+  {
+    "id": "pnml_005",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful Petri net in PNML format for a traffic light process. The traffic light cycles through the phases green, yellow, red, and back. Model the three color places (red, green, yellow) and four transitions (green, yellow, red, red-yellow) with appropriate directed arcs. The net includes a weighted arc (weight 2) on one transition. The initial marking has 1 token in the green place. Model all required places, transitions, and arcs as shown in the diagram.",
+    "reference_answer": "solutions/trafficLight_example.pnml"
+  },
+  {
+    "id": "pnml_006",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful high-level Petri net in PNML format (Symmetric Net) for a referendum process. Voters can start a vote (ready place with 1 dot token triggers the start transition, distributing all voter tokens into the voting place), and then each voter independently votes either yes or no, moving their token to voted_yes or voted_no respectively. Model the places (ready, voting, voted_yes, voted_no) and transitions (start, yes, no) with appropriate arc inscriptions.",
+    "reference_answer": "solutions/referendum.pnml"
+  },
+  {
+    "id": "pnml_007",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful high-level Petri net in PNML format (Symmetric Net) for a drink vending machine. The machine has places for quality levels (wait, ready), product slots, and option slots. Customers in the wait state are routed to one of four elaboration transitions based on their quality level (elaborate0 through elaborate3), each assigning different product and option slot combinations. A serve transition moves them back from ready to wait. Model all places, transitions, and arc inscriptions as shown.",
+    "reference_answer": "solutions/drinking.pnml"
+  },
+  {
+    "id": "pnml_008",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful high-level Petri net in PNML format (Symmetric Net) for a distributed database with mutex. Two sites can start a modification process, acquire a mutex lock on a file, modify and broadcast the change to other sites, collect acknowledgements, release the mutex, and update passive sites. Model all places (Active, Mutex, WaitMutex, Modify, Message, RecBuff, MesBuffReply, Acknowledge, updating, all_active, all_passive) and transitions (Start, Acquire, Change, SendMsg, SendReply, Update, end_update, Release) with correct arc inscriptions.",
+    "reference_answer": "solutions/database.pnml"
+  },
+  {
+    "id": "pnml_009",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful high-level Petri net in PNML format (Symmetric Net) for an airplane landing detection system. The net samples weight-on-wheel sensors for left and right landing gear, reads altitude, and evaluates speed of both wheels. Guard conditions on transitions determine whether the plane is on the ground or not, producing a signal into the Plane_On_Ground_Signal_no place. Model all sensor places (Weight_Left_Wheel, Weight_Right_Wheel, Speed_Left_Wheel, Speed_Right_Wheel, TheAltitude), pool places (WeightPossibleVal, SpeedPossibleVal, AltitudePossibleVal), step places (stp1–stp5), output places (P1–P6), and all transitions with their guard conditions.",
+    "reference_answer": "solutions/airplane.pnml"
+  },
+  {
+    "id": "pnml_010",
+    "domain": "PetriNet",
+    "question": "Create a syntactically correct and semantically meaningful high-level Petri net in PNML format (Symmetric Net) for a Sudoku solver. The net has places Rows, Columns, Cells (all initially marked with all pairs <x,y> from N×N), and an empty Board place. A single select transition fires by consuming a row constraint <x,v>, a column constraint <y,v>, and a cell <x,y>, and produces the board entry <x,y,v>. Model all places, the transition, and arc inscriptions using variables x, y, v over the finite integer range N = [1..3].",
+    "reference_answer": "solutions/sudokuA.pnml"
+  }
+]
