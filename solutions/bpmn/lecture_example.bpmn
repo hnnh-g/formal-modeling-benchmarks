@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1kd6hqc" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.13.1">
+  <bpmn:process id="Process_0qiavp0" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1tlremg" name="lecture starts">
+      <bpmn:outgoing>Flow_1clnd35</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_10c57cs" name="interact with Facebook">
+      <bpmn:incoming>Flow_0ps9pp4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1kukhxb</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="Flow_0ps9pp4" sourceRef="Activity_0fen5ky" targetRef="Activity_10c57cs" />
+    <bpmn:sequenceFlow id="Flow_1kukhxb" sourceRef="Activity_10c57cs" targetRef="Activity_17ayud4" />
+    <bpmn:sequenceFlow id="Flow_1clnd35" sourceRef="StartEvent_1tlremg" targetRef="Activity_0fen5ky" />
+    <bpmn:sequenceFlow id="Flow_1978wzi" sourceRef="Activity_17ayud4" targetRef="Event_0fmpka0" />
+    <bpmn:endEvent id="Event_0fmpka0" name="lecture finished">
+      <bpmn:incoming>Flow_1978wzi</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="Activity_0fen5ky" name="Turn on the laptop">
+      <bpmn:incoming>Flow_1clnd35</bpmn:incoming>
+      <bpmn:outgoing>Flow_0ps9pp4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_17ayud4" name="Turn off laptop">
+      <bpmn:incoming>Flow_1kukhxb</bpmn:incoming>
+      <bpmn:outgoing>Flow_1978wzi</bpmn:outgoing>
+    </bpmn:task>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0qiavp0">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1tlremg">
+        <dc:Bounds x="156" y="82" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="143" y="125" width="63" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_10c57cs_di" bpmnElement="Activity_10c57cs">
+        <dc:Bounds x="390" y="60" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0xo2bnz_di" bpmnElement="Event_0fmpka0">
+        <dc:Bounds x="692" y="82" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="673" y="125" width="74" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1mc1zkb_di" bpmnElement="Activity_0fen5ky">
+        <dc:Bounds x="240" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1u8kx9q_di" bpmnElement="Activity_17ayud4">
+        <dc:Bounds x="540" y="60" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0ps9pp4_di" bpmnElement="Flow_0ps9pp4">
+        <di:waypoint x="340" y="100" />
+        <di:waypoint x="390" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1kukhxb_di" bpmnElement="Flow_1kukhxb">
+        <di:waypoint x="490" y="100" />
+        <di:waypoint x="540" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1clnd35_di" bpmnElement="Flow_1clnd35">
+        <di:waypoint x="192" y="100" />
+        <di:waypoint x="240" y="100" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1978wzi_di" bpmnElement="Flow_1978wzi">
+        <di:waypoint x="640" y="100" />
+        <di:waypoint x="692" y="100" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
